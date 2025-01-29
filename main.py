@@ -211,7 +211,23 @@ def seventeen(excerpt: str) -> str:
     for line in excerpt:
         result += line + "\n"
     return result[0:-1]
-                
+
+def eighteen(graph: str) -> str:
+    graph = graph.split('\n')
+    variables = graph[-1]
+
+    for i in range(len(variables)):
+        if not variables[i].isalpha(): continue
+        counter = 0
+        j = -2
+        while True:
+            if graph[j][i] == 'X':
+                counter += 1
+            else:
+                break
+            j -= 1
+        print(f"{variables[i]}: {counter}")
+
 
 
 def main() -> str:
