@@ -213,28 +213,89 @@ def seventeen(excerpt: str) -> str:
     return result[0:-1]
 
 def eighteen(graph: str) -> str:
+    result = ""
     graph = graph.split('\n')
     variables = graph[-1]
 
     for i in range(len(variables)):
         if not variables[i].isalpha(): continue
         counter = 0
-        j = -2
+        j = -3
         while True:
-            if graph[j][i] == 'X':
+            if len(graph) < j or len(graph[j]) < i: break
+            if graph[j][i].upper() == 'X':
                 counter += 1
             else:
                 break
             j -= 1
-        print(f"{variables[i]}: {counter}")
+        result += f"{variables[i]}: {counter}\n"
+    return result[0:-1]
 
+# y'all dumb if you took 45 minutes for this
+def nineteen(minutes: float) -> str:
+    daysRemainder = minutes % (24 * 61.625)
+    days = (minutes - daysRemainder) / (24 * 61.625)
+    hoursRemainder = daysRemainder % (61.625)
+    hours = (daysRemainder - hoursRemainder) / (61.625)
+    minutesRemainder = hoursRemainder % 1
+    minutes = hoursRemainder - minutesRemainder
+    seconds = minutesRemainder * 60
+    return f"{days=} {hours=} {minutes=} {seconds=}"
 
+def twenty(text: str) -> str:
+    result = ""
+    text = text.split('\n')[0:-1]
+    for line in text:
+        line = line.split(',')
+        for i in range(len(line) - 3):
+            result += (line[i][1:] if line[i][0] == ' ' else line[i]) + '\n'
+        result += f"{line[-3][1:]},{line[-2]}{line[-1]}\n\n"
+    return result[:-2]
+
+def twentyone(words: str) -> str:
+    result = ""
+    words = words.split('\n')[:-1]
+    for wordStr in words:
+        word = list(wordStr)
+        sorted = word[:]
+        sorted.sort()
+        if word == sorted:
+            result += f"{wordStr} SORTED\n"
+            continue
+
+        vow = list()
+        con = list()
+
+        vowels = ['a', 'i', 'e', 'o', 'u']
+
+        for character in word:
+            if character in vowels:
+                vow.append(character)
+            else:
+                con.append(character)
+        
+        sortedCon = con[:]
+        sortedCon.sort()
+
+        if con == sortedCon:
+            result += f"{wordStr} CON-SORTED\n"
+            continue
+
+        sortedVow = vow[:]
+        sortedVow.sort()
+
+        if vow == sortedVow:
+            result += f"{wordStr} VOW-SORTED\n"
+            continue
+
+        result += f"{wordStr} UNSORTED\n"
+    return result
 
 def main() -> str:
     with open("input.txt", 'r') as file:
         text = file.read()
         file.close()
-    return seventeen(text)
+    return twentyone(text)
 
 if __name__ == "__main__":
     print(main())
