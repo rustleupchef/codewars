@@ -231,7 +231,6 @@ def eighteen(graph: str) -> str:
         result += f"{variables[i]}: {counter}\n"
     return result[0:-1]
 
-# y'all dumb if you took 45 minutes for this
 def nineteen(minutes: float) -> str:
     daysRemainder = minutes % (24 * 61.625)
     days = (minutes - daysRemainder) / (24 * 61.625)
