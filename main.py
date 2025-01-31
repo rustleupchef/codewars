@@ -290,6 +290,16 @@ def twentyone(words: str) -> str:
         result += f"{wordStr} UNSORTED\n"
     return result
 
+def twentytwo(mbs: str) -> str:
+    mbs = mbs.split()
+    m = int(mbs[0])
+    b = int(mbs[1])
+    size = int(mbs[2])
+    graph = []
+    for i in range(size + 1):
+        graph.append([])
+    pass
+
 def main() -> str:
     with open("input.txt", 'r') as file:
         text = file.read()
