@@ -1,10 +1,10 @@
 def append_column(mlist: list[list], amount = 1, right = True, placeHolder = None) -> None:
-    if len(mlist) > 0:
+    for row in range(len(mlist)):
         for i in range(amount):
             if right:
-                mlist[0].append(placeHolder);
+                mlist[row].append(placeHolder);
             else:
-                mlist[0].insert(0, placeHolder);
+                mlist[row].insert(0, placeHolder);
 
 def append_row(mlist: list[list], amount = 1, bottom = True, length = None, placeHolder = None) -> None:
     if length is None:
@@ -17,13 +17,11 @@ def append_row(mlist: list[list], amount = 1, bottom = True, length = None, plac
 
     for i in range(amount):
         if bottom:
-            mlist.append(emptyList)
+            mlist.append(emptyList[:])
         else:
-            mlist.insert(0, emptyList)
+            mlist.insert(0, emptyList[:])
 
 def list_of_dimension(size = (1, 1), placeHolder = None) -> list[list]:
     graph: list[list] = []
     append_row(graph, amount=size[1], length=size[0],placeHolder=placeHolder)
     return graph
-
-print(list_of_dimension((4, 4)))
