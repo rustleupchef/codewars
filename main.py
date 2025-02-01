@@ -18,9 +18,10 @@ def three(nums: str) -> str:
     return minutesAgo
 
 def four(sketch: str) -> str:
+    replace = sketch[0]
     sketch.replace("\n", "")
-    sketch.replace("`", "\n")
-    return sketch[1:len(sketch)]
+    sketch.replace(replace, "\n")
+    return sketch[1:]
 
 def five(codes: str) -> str:
     sample = ""
