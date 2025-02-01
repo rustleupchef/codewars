@@ -1,10 +1,10 @@
-def one() -> None:
+def zero() -> None:
     print("You are not prepared for what is to come.")
 
-def two(name: str) -> str:
+def one(name: str) -> str:
     return f"Your real strenght comes from being the best {name} you can be!"
 
-def three(nums: str) -> int:
+def two(nums: str) -> int:
     x = nums.split()[0]
     y = nums.split()[0]
     return x / y * (y + y)
