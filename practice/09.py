@@ -12,7 +12,6 @@ codes = []
 funds = 0.0
 
 while True:
-    temp_date += timedelta(days=1)
     
     current = str(temp_date.date())
     with open(f"{current}.txt", "r") as file:
@@ -25,6 +24,8 @@ while True:
 
         funds += float(line[-2])
         codes.append(line[2])
+        
+    temp_date += timedelta(days=1)
     if current == str(stop_date.date()):
         break
 
