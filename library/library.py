@@ -25,3 +25,11 @@ def list_of_dimension(size = (1, 1), placeHolder = None) -> list[list]:
     graph: list[list] = []
     append_row(graph, amount=size[1], length=size[0],placeHolder=placeHolder)
     return graph
+
+def is_Prime(n: int) -> bool:
+    if n <= 1: return False
+
+    for i in range(2, int(n/2) + 1):
+        if n % i == 0:
+            return False
+    return True
