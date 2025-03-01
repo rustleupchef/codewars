@@ -39,3 +39,14 @@ def reverseStr(text: str) -> str:
 
 def convertBase(num, base: int) -> int:
     return int(str(num), base)
+
+def allFactors(num: int) -> list[int]:
+    factors = []
+    for i in range(1, num + 1):
+        if num % i == 0:
+            factors.append(i)
+    return factors
+
+def halfFactors(num: int) -> list[int]:
+    factors = allFactors(num)
+    return factors[:len(factors)//2]
