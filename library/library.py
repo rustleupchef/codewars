@@ -33,3 +33,9 @@ def is_Prime(n: int) -> bool:
         if n % i == 0:
             return False
     return True
+
+def reverseStr(text: str) -> str:
+    return text[::-1]
+
+def convertBase(num, base: int) -> int:
+    return int(str(num), base)
