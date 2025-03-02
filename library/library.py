@@ -48,5 +48,8 @@ def allFactors(num: int) -> list[int]:
     return factors
 
 def halfFactors(num: int) -> list[int]:
-    factors = allFactors(num)
-    return factors[:len(factors)//2]
+    factors = []
+    for i in range(1, num // 2):
+        if num % i == 0:
+            factors.append(i)
+    return factors
