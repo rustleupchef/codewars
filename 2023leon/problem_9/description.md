@@ -1,8 +1,15 @@
 ### Description
 
 ### Input
+
+### Output
+
+## Example
+
+### input
 ```bash
 ```
-### Output
+
+### output
 ```bash
 ```
