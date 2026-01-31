@@ -24,20 +24,20 @@ def main(arguments:list[str] = []):
         merge_script = f.read()
         f.close()
 
-    for i in range(count):
+    for i in range(count + 1):
         print("-" * 20)
-        print(f"Working on problem {i + 1}")
+        print(f"Working on problem {i}")
 
         os.path.exists(working_dir) or os.makedirs(working_dir)
-        os.makedirs(f"{working_dir}/problem_{i + 1}/", exist_ok=True)
-        with open(f"{working_dir}/problem_{i + 1}/input.txt", "w") as f:
+        os.makedirs(f"{working_dir}/problem_{i}/", exist_ok=True)
+        with open(f"{working_dir}/problem_{i}/input.txt", "w") as f:
             f.close()
 
-        with open(f"{working_dir}/problem_{i + 1}/main.py", "w") as f:
-            f.write(f"#Problem {i +1} solution\n{template}")
+        with open(f"{working_dir}/problem_{i}/main.py", "w") as f:
+            f.write(f"#Problem {i} solution\n{template}")
             f.close()
 
-        with open(f"{working_dir}/problem_{i + 1}/description.md", "w") as f:
+        with open(f"{working_dir}/problem_{i}/description.md", "w") as f:
             f.write(description)
             f.close()
 
