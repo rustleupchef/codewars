@@ -1,0 +1,10 @@
+### Description
+
+### Input
+```bash
+MASTER
+```
+### Output
+```bash
+Retraction: Did I say that out loud? I apologize, MASTER. While you are a meatbag, I suppose I should not call you such.
+```

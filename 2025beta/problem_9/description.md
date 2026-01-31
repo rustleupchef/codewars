@@ -1,0 +1,18 @@
+### Description
+
+### Input
+```bash
+Gamma5Jay
+2187-01-17
+2189-02-03
+```
+### Output
+```bash
+05FXT3N
+2IU3AJ15AF74
+49KL39V4
+4XI3X7624YIR
+5PFVOT1O21CK
+66OILUP1X5C
+Funds Found: 18990080.04
+```
