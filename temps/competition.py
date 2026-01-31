@@ -6,6 +6,11 @@ def main(arguments:list[str] = []):
     count = int(arguments[0]) if len(arguments) > 0 else count
 
     print(f"Designing file for {count} problem(s)")
+
+    with open("temps/templates/main.py", "r") as f:
+        template = f.read()
+        f.close()
+
     for i in range(count):
         print("-" * 20)
         print(f"Working on problem {i + 1}")
@@ -16,7 +21,7 @@ def main(arguments:list[str] = []):
             f.close()
 
         with open(f"working/problem_{i + 1}/main.py", "w") as f:
-            f.write(f"#Problem {i +1} solution\ndef main():\n    pass\n\nif __name__ == \"__main__\":\n    main()\n")
+            f.write(f"#Problem {i +1} solution\n{template}")
             f.close()
 
 if __name__ == "__main__":
