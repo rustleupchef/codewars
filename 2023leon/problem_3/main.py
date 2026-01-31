@@ -1,6 +1,6 @@
 #Problem 3 solution
 def main():
-    pass
+    print(input()[::-1])
 
 if __name__ == "__main__":
     main()
