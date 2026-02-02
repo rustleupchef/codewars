@@ -1,0 +1,7 @@
+3
+noun=whisper,car,laundry
+place=island,upstairs,racetrack
+adjective=understand,fast,sublime
+blka ablas <NOUN>, ijdasiojdasojiasoji <PLACE>
+sadds,<ADJECTIVE>dasji, <ADJECTIVE>
+END
