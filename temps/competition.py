@@ -16,9 +16,11 @@ def main(arguments:list[str] = []):
         print(f"Working on problem {i}")
 
         os.path.exists("working") or os.makedirs("working")
-        os.makedirs(f"working/problem_{i}/", exist_ok=True)
-        with open(f"working/problem_{i}/input.txt", "w") as f:
-            f.close()
+        os.makedirs(f"working/problem_{i}/inputs/", exist_ok=True)
+
+        for j in range(1, 4):
+            with open(f"working/problem_{i}/inputs/input{j}.txt", "w") as f:
+                f.close()
 
         with open(f"working/problem_{i}/main.py", "w") as f:
             f.write(f"#Problem {i} solution\n{template}")
