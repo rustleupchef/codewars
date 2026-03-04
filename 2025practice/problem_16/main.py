@@ -1,4 +1,8 @@
 #Problem 16 solution
+import math
+
+def truncate(num, dec):
+    return math.trunc(num * (10 ** dec)) / (10 ** dec)
 
 def toMiles(parts):
     conversions = {
@@ -11,9 +15,9 @@ def toMiles(parts):
     pair = conversions[parts[1]]
     number = parts[0]/pair[0]
     if pair[1] == "miles":
-        return (number, parts[1])
+        return (number, "miles")
     else:
-        toMiles((number, parts[1]))
+        return toMiles((number, pair[1]))
 
 
 def main():
@@ -23,7 +27,7 @@ def main():
     parts[0] = int(parts[0])
     miles = toMiles(parts)
     
-    print(f"{miles[0]/(seconds/3600):.2f}")
+    print(f"{truncate(miles[0]/(seconds/3600), 2):.2f} miles/hour")
 
 if __name__ == "__main__":
     main()

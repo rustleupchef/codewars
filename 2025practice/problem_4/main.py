@@ -21,7 +21,7 @@ def main():
     hatsText = f"{hats} hats" if hats != 1 else "1 hat"
     stickersText = f"{stickers} stickers" if stickers != 1 else "1 sticker"
 
-    print(f"{name} spent ${total} on {shirtsText}, {hatsText}, {stickersText}.")
+    print(f"{name} spent ${total} on {shirtsText}, {hatsText}, and {stickersText}.")
 
 if __name__ == "__main__":
     main()

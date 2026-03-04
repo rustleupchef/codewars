@@ -17,7 +17,7 @@ def main():
     
     print(f"Files {truncate_dec(files, 2):.2f} MiB")
     print(f"Files {truncate_dec(files * (2 ** 20/10**6), 2):.2f} MB")
-    print(f"Files {truncate_dec((files + 700) * (2 ** 20/10**6), 2):.2f} MB")
+    print(f"Total {truncate_dec((files + 700) * (2 ** 20/10**6), 2):.2f} MB")
 
     toBeat = truncate_dec((files + 700) * (2 ** 20/10**6), 2)
 

@@ -10,7 +10,6 @@ def main():
             break
 
     width = max([len(line) for line in lines])
-    print(width)
     used = set()
 
     topLines = []
@@ -48,12 +47,11 @@ def main():
 
     groups = [topLines, middleLines, bottomLines]
 
-    print(f"T{'#' * ((width - 1)//2 * 2)}")
+    print(f"T{'#' * (width - 1)}")
     for group in groups:
         for line in group:
-            half = (width - line) / 2
-            print(f"{'#' * int(half)}{' ' * line}{'#' * int(half)}")
-    print(f"B{'#' * ((width - 1)//2 * 2)}")
+            print([d for d in lines if d.count(' ') == line][0])
+    print(f"B{'#' * (width - 1)}")
 
 
 if __name__ == "__main__":
