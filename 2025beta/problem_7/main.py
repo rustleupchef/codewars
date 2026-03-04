@@ -7,7 +7,6 @@ def main():
         # try catch because their is nothing to detect the bounds of the area
         try:
             line = input()
-            print(line)
             if line == "":
                 break
             grid.append(line)
@@ -19,9 +18,9 @@ def main():
         for x in range(len(grid[y])):
             if grid[y][x] == 'A':
                 print(f"Get out of there! Danger at ({x}, {y})")
-                break
+                return
     else:
-        print("You are lucky Get back to the office NOW!")
+        print("You are lucky. Get back to the office NOW!")
 
 if __name__ == "__main__":
     main()

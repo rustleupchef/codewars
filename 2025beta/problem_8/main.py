@@ -9,7 +9,7 @@ def main():
     # print all the lines in reverse
     lines.reverse()
     for line in lines:
-        print(line)
+        print(line.rstrip())
 
 if __name__ == "__main__":
     main()

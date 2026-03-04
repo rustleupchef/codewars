@@ -20,7 +20,7 @@ def main():
     else:
         # check if the number ahead or behind is prime
         if (is_Prime(num + 1) or is_Prime(num - 1)):
-            print(f"{num} could be a prime!")
+            print(f"{num} could be prime!")
         else:
             print(f"{num} is a bad test specimen")
 
