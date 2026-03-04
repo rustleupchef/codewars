@@ -31,6 +31,12 @@ def main(arguments = []):
         print(f"Working on problem {i}")
 
         os.path.exists("working") or os.makedirs("working")
+
+        files = os.listdir(f"working/problem_{i}/")
+        files = [file for file in files if file != "main.py"]
+
+        for file in files: os.remove(os.path.join(f"working/problem_{i}", file))
+
         os.makedirs(f"working/problem_{i}/inputs/", exist_ok=True)
         os.makedirs(f"working/problem_{i}/outputs/", exist_ok=True)
 
