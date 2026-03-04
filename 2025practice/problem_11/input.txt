@@ -1,5 +1,0 @@
-CA = California
-NV = Nevada
-AZ = Arizona
-MT = Montana
-END
