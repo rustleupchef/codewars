@@ -6,7 +6,7 @@ def truncate(num, decimals):
 
 def main():
     count = int(input())
-    hours = int(input())/60
+    minutes = int(input())
 
     cars = []
 
@@ -17,7 +17,7 @@ def main():
     for car in cars:
         mph = int(car[0])
 
-        distance = mph * hours
+        distance = truncate(mph * minutes / 60, 2)
 
         line = ""
 
@@ -31,7 +31,7 @@ def main():
         qChunks = (qRemainder - dRemainder)/.25
 
         line = '-' * int(fChunks) + '~' * int(sChunks) + "{}" * int(qChunks)
-        print(f"({truncate(distance,2):.2f}){line}{car[1]}")
+        print(f"({distance:.2f}){line}{car[1]}")
 
 
 if __name__ == "__main__":

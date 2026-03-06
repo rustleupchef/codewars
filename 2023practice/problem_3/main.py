@@ -7,7 +7,7 @@ def main():
 
     future = int(population * growth * years)
     
-    print(f"At current rate of growth there will be {future} ponies in {years} years")
+    print(f"At the current rate of growth there will be {future} ponies in {years} years.")
     if future > capacity:
         print(f"Celestia will need to add space for at least {future - capacity} ponies!")
     else:

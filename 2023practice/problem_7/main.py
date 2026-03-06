@@ -15,6 +15,8 @@ def main():
             text += " FUZZ"
         if num % 5 == 0 and num % 9 == 0:
             text += "!"
+        if not (num % 5 == 0 or num % 9 == 0):
+            continue
         print(text)
 
 if __name__ == "__main__":

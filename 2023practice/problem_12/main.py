@@ -22,7 +22,7 @@ def convert(num, baseUnit, targetUnit):
 
 
 def main():
-    options = ["F", "C", "K"]
+    options = ["C", "F", "K"]
     parts = input().split()
 
     extension = ""
