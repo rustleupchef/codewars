@@ -3,6 +3,7 @@ import os
 
 def main(arguments = []):
     path = arguments[0] if len(arguments) > 0 else ""
+    start_count = int(arguments[1]) if len(arguments) > 1 else 0
     with open("temps/templates/main.py", "r") as f:
         template = f.read()
         f.close()
@@ -18,7 +19,7 @@ def main(arguments = []):
     files = sorted(files, key=indexedFiles.get)
     
     problem_paths = dict()
-    count = 0
+    count = start_count
     while True:
         problem_paths[count] = [f.removeprefix(f"prob{'0' * (2 - len(str(count)))}{count}-") for f in files if f.startswith(f"prob{'0' * (2 - len(str(count)))}{count}-")]
         if len(problem_paths[count]) <= 0:
@@ -31,6 +32,7 @@ def main(arguments = []):
         print(f"Working on problem {i}")
 
         os.path.exists("working") or os.makedirs("working")
+        os.path.exists(f"working/problem_{i}/") or os.makedirs(f"working/problem_{i}")
 
         files = os.listdir(f"working/problem_{i}/")
         files = [file for file in files if file != "main.py"]
