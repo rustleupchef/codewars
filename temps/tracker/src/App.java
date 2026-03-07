@@ -28,17 +28,24 @@ public class App {
 
         JFrame frame = new JFrame("Tracker");
         frame.setSize(600, 600);
-        frame.setLayout(new GridLayout(bounds[0], bounds[1]));
+        frame.setLayout(new GridLayout(bounds[0], bounds[1], 0, 0));
         
         for (int i = 1; i < size + 1; i++) {
+
+            Color base = new Color(218, 72, 72);
+            Color switched = new Color(160, 213, 133);
+
             JButton button = new JButton(String.valueOf(i));
-            button.setBackground(Color.red);
+            button.setForeground(Color.white);
+            button.setBorder(null);
+            button.setBackground(base);
             button.addActionListener(e -> {
-                button.setBackground((button.getBackground() == Color.red) ? Color.green : Color.red);
+                button.setBackground((button.getBackground() == base) ? switched : base);
             });
             frame.add(button);
         }
 
         frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
