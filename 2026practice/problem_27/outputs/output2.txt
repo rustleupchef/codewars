@@ -1,0 +1,7 @@
+7769: 3411 houses. 5875:7769 and 7770:9285 each have a sum of 12927690.
+7770: 705 houses. 7410:7769 and 7771:8114 each have a sum of 2732220.
+7771: 1409 houses. 7035:7770 and 7772:8443 each have a sum of 5448240.
+7772: 2804 houses. 6243:7771 and 7773:9046 each have a sum of 10713703.
+7773: 3224 houses. 5992:7772 and 7773:9215 each have a sum of 12256842.
+7774: 1072 houses. 7220:7773 and 7775:8291 each have a sum of 4153061.
+7775: 10224 houses. 746:7774 and 7775:10969 each have a sum of 29943540.

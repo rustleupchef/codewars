@@ -1,0 +1,6 @@
+8: 8 houses. 4:8 and 9:11 each have a sum of 30.
+6: 5 houses. 4:6 and 7:8 each have a sum of 15.
+204: 57 houses. 174:203 and 205:230 each have a sum of 5655.
+13: 7 houses. 9:12 and 13:15 each have a sum of 42.
+10: No neighborhood exists.
+9996: 11996 houses. 1999:9995 and 9997:13994 each have a sum of 47958009.

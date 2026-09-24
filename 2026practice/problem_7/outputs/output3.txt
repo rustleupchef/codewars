@@ -1,0 +1,5 @@
+100.1.2 is newer
+99.5.89 is older
+123.4.56 is identical
+9.8.8 is newer
+10.1.0 is older

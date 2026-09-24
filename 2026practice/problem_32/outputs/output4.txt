@@ -1,0 +1,59 @@
+ Time   rO       P       Q       R       S      rT
+ 0       0-o0P   9       9       9       9       0-t0S
+ 1       0       8-o1O   9       9       6-t3T   0
+ 2       1-o0S   8       9       9       6       3-t0R
+ 3       1       8-o0S   9       9       6-t0R   3
+ 4       1       8       9-o0S   6-t3T   6       3
+ 5       1       8       9       6-o0S   6-t3T   3
+ 6       1       8       9       6       5-o1O   6-t0Q
+ 7       1       8       9       6-o1O   5-t0Q   6
+ 8       1       8       9-o1O   6-t0Q   5       6
+ 9       1       8-o1O   6-t3T   6       5       6
+10       2-o0S   8       6       6-t3T   5       6
+11       2       8-o0S   6       6       5-t3T   6
+12       2       8       6-o0S   6       5       9-t0P
+13       2       8       6       6-o0S   5-t0P   9
+14       2       8       6       6-t0P   4-o1O   9
+15       2       8       6-t0P   6-o1O   4       9
+16       2       5-t3T   6-o1O   6       4       9
+17       2       5-o1O   6-t3T   6       4       9
+18       3-o0S   5       6       6-t3T   4       9
+19       3       5-o0S   6       6       4-t3T   9
+20       3       5       6-o0S   6       4      12-t0R
+21       3       5       6       6-o0S   4-t0R  12
+22       3       5       6       3-t3T   3-o1O  12
+23       3       5       6       3-o1O   3-t3T  12
+24       3       5       6-o1O   3       3      15-t0Q
+25       3       5-o1O   6       3       3-t0Q  15
+26       4-o0R   5       6       3-t0Q   3      15
+27       4       5-o0R   3-t3T   3       3      15
+28       4       5       3-o0R   3-t3T   3      15
+29       4       5       3       2-o1O   3-t3T  15
+30       4       5       3-o1O   2       3      18-t0P
+31       4       5-o1O   3       2       3-t0P  18
+32       5-o0R   5       3       2-t0P   3      18
+33       5       5-o0R   3-t0P   2       3      18
+34       5       2-t3T   3-o0R   2       3      18
+35       5       2       3-t3T   1-o1O   3      18
+36       5       2       3-o1O   1-t3T   3      18
+37       5       2-o1O   3       1       3-t3T  18
+38       6-o0R   2       3       1       3      21-t0S
+39       6       2-o0R   3       1       0-t3T  21
+40       6       2       3-o0R   1       0      24-t0Q
+41       6       2       3       0-o1O   0-t0Q  24
+42       6       2       3-o1O   0-t0Q   0      24
+43       6       2-o1O   0-t3T   0       0      24
+44       7-o0P   2       0       0-t3T   0      24
+45       7       1-o1O   0       0       0-t3T  24
+46       8-o0P   1       0       0       0      27-t0P
+47       8       0-o1O   0       0       0-t0P  27
+48       9-o0    0       0       0-t0P   0      27
+49       9-o0    0       0-t0P   0       0      27
+50       9-o0    0-t0T   0       0       0      27
+51       9-o0    0       0-t0T   0       0      27
+52       9-o0    0       0       0-t0T   0      27
+53       9-o0    0       0       0       0-t0T  27
+54       9-o0    0       0       0       0      27-t0
+
+JUDGE_NOTE: At 46 min, both choose to go to P, but One returns the last pumpkin in 2 minutes,
+and Three spends 6 more minutes empty before home.

@@ -1,0 +1,7 @@
+FAIL
+- - X - - -
+- X X X - -
+X X X X X -
+X X ! X X -
+- - X X - -
+- - - - - -

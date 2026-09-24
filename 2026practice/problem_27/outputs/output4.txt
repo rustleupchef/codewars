@@ -1,0 +1,10 @@
+60: 56 houses. 25:59 and 60:80 each have a sum of 1470.
+170: 45 houses. 146:169 and 170:190 each have a sum of 3780.
+11: 14 houses. 2:10 and 12:15 each have a sum of 54.
+65: No neighborhood exists.
+5280: No neighborhood exists.
+9997: 11997 houses. 2000:9997 and 9998:13996 each have a sum of 47976003.
+3: 3 houses. 1:2 and 3:3 each have a sum of 3.
+4: 4 houses. 2:3 and 5:5 each have a sum of 5.
+6930: 9800 houses. 1:6929 and 6931:9800 each have a sum of 24008985.
+9680: 13351 houses. 335:9679 and 9681:13685 each have a sum of 46790415.

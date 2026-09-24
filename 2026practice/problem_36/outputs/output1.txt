@@ -1,0 +1,7 @@
+C is closed between 2 and 5
+5 is closed between A and E
+Routing from (B and 2) to (G and 6) using all turns: 11 Blocks, 2 turns, route: NEEEEESSSSS
+Routing from (B and 2) to (G and 6) using right turns: 11 Blocks, 2 turns, route: NEEEEESSSSS
+Routing from (G and 1) to (B and 2) using left turns: 10 Blocks, 3 turns, route: SSENWWWWWW
+Routing from (A and 1) to (C and 5) using left turns: No route possible
+Routing from (C and 4) to (F and 7) using right turns: 14 Blocks, 5 turns, route: WNEEEEESSSSSWN

@@ -1,0 +1,6 @@
+3 is closed between A and C
+5 is closed between A and C
+Routing from (A and 1) to (C and 8) using all turns: 9 Blocks, 1 turns, route: EESSSSSSS
+Routing from (C and 5) to (C and 4) using right turns: 11 Blocks, 4 turns, route: SWNNNNNESSS
+Routing from (A and 1) to (B and 2) using left turns: 12 Blocks, 2 turns, route: SSSSSSENNNNN
+Routing from (C and 8) to (A and 1) using all turns: No route possible

@@ -1,0 +1,6 @@
+DESCRAMBLING
+She said she sells seashells by the seashore.
+
+JUDGE_NOTE:
+A word that uses all unique letters is a heterogram,
+which makes a very efficient Puzzle Frequency Chart.

@@ -1,0 +1,11 @@
+4 is closed between C and D
+D is closed between 2 and 3
+3 is closed between E and F
+E is closed between 6 and 7
+A is closed between 6 and 7
+C is closed between 6 and 7
+D is closed between 5 and 6
+5 is closed between B and C
+Routing from (D and 4) to (A and 8) using right turns: 31 Blocks, 7 turns, route: NESSSWWWNNNNNEEEEESSSSSSSWWWWWW
+Routing from (D and 4) to (A and 8) using all turns: 15 Blocks, 5 turns, route: NESSEESSSWWWWWW
+Routing from (D and 4) to (A and 8) using left turns: No route possible

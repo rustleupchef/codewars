@@ -1,0 +1,38 @@
+ Time   rO       P       Q       R       S      rT
+ 0       0-o0P   6       9       7       8       0-t0Q
+ 1       0       5-o1O   9       7       8-t0Q   0
+ 2       1-o0P   5       9       7-t0Q   8       0
+ 3       1       4-o1O   6-t3T   7       8       0
+ 4       2-o0P   4       6       7-t3T   8       0
+ 5       2       3-o1O   6       7       8-t3T   0
+ 6       3-o0P   3       6       7       8       3-t0S
+ 7       3       2-o1O   6       7       5-t3T   3
+ 8       4-o0P   2       6       7       5       6-t0R
+ 9       4       1-o1O   6       7       5-t0R   6
+10       5-o0P   1       6       4-t3T   5       6
+11       5       0-o1O   6       4       5-t3T   6
+12       6-o0R   0       6       4       5       9-t0Q
+13       6       0-o0R   6       4       5-t0Q   9
+14       6       0       6-o0R   4-t0Q   5       9
+15       6       0       3-t3T   3-o1O   5       9
+16       6       0       3-o1O   3-t3T   5       9
+17       6       0-o1O   3       3       5-t3T   9
+18       7-o0Q   0       3       3       5      12-t0S
+19       7       0-o0Q   3       3       2-t3T  12
+20       7       0       2-o1O   3       2      15-t0R
+21       7       0-o1O   2       3       2-t0R  15
+22       8-o0Q   0       2       0-t3T   2      15
+23       8       0-o0Q   2       0       2-t3T  15
+24       8       0       1-o1O   0       2      18-t0S
+25       8       0-o1O   1       0       0-t2T  18
+26       9-o0Q   0       1       0       0      20-t0Q
+27       9       0-o0Q   1       0       0-t0Q  20
+28       9       0       0-o1O   0-t0Q   0      20
+29       9       0-o1O   0-t0T   0       0      20
+30      10-o0    0       0       0-t0T   0      20
+31      10-o0    0       0       0       0-t0T  20
+32      10-o0    0       0       0       0      20-t0
+
+JUDGE_NOTE: One spends the first 12 seconds back and forth to P.
+At 26 min, both choose to go to Q,
+but One gets there first, and Three returns empty.

@@ -1,0 +1,1 @@
+Routing from (A and 1) to (C and 4) using all turns: 5 Blocks, 1 turns, route: EESSS
