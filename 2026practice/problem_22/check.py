@@ -11,7 +11,7 @@ def main():
     highest = min(highestIn, highestOut)
     for i in range(1, highest + 1):
         with open(f"inputs/input{i}.txt", "r") as f:
-            result = subprocess.run([sys.executable, "main.py"], stdin=f, capture_output=True, text=True)
+            result = subprocess.run(["./a.out"], stdin=f, capture_output=True, text=True)
             output = result.stderr if result.stderr else result.stdout
             f.close()
         
