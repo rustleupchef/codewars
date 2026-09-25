@@ -5,6 +5,7 @@ import sys
 import difflib
 
 def main():
+    subprocess.run(["g++", "main.cpp"])
     highestIn = max([int(f.split(".")[0][-1]) for f in os.listdir("inputs")])
     highestOut = max([int(f.split(".")[0][-1]) for f in os.listdir("inputs")])
 
@@ -22,6 +23,7 @@ def main():
         diff = difflib.Differ().compare(output.split("\n"), outputCheck.split("\n"))
         print("\n".join(diff))
         print(f'Test {i}: {"✅" if outputCheck == output else "❎"}')
+    os.remove("a.out")
         
 
     
