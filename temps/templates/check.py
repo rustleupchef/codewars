@@ -20,7 +20,7 @@ def main():
         
         diff = difflib.Differ().compare(output.split("\n"), outputCheck.split("\n"))
         print("\n".join(diff))
-        print(f'Test {i}: {"✅" if outputCheck == output else "❎"}')
+        print(f'Test {i}: {"✅" if outputCheck == output else "❌"}')
         
 
     
